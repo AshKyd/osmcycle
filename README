@@ -1,0 +1,16 @@
+= OSMCycle =
+This is the stylesheet that currently drives Briscycle on
+[http://briscycle.com/].
+
+== Requirements ==
+This stylesheet requires several things:
+
+* Database settings set up in datasource-settings-sample.xml.inc.
+* [http://wiki.openstreetmap.org/wiki/Mapnik#Contours Contours] must be set up in the database, or %land-contours; be commented out in styles.xml.inc.
+* [http://wiki.openstreetmap.org/wiki/Mapnik#World_Boundaries World Boundaries] set up somewhere and referenced in layers.xml.inc.
+
+The Mapnik article on the OSM wiki has a great tutorial for setting up 
+a mapnik rendering system on your local machine but you could also 
+run this with mod_tile with some optimisations.
+
+[http://wiki.openstreetmap.org/wiki/Mapnik]
