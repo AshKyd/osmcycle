@@ -66,3 +66,5 @@
 <!ENTITY color_leisureFill "#C7D2B3">
 <!ENTITY color_highwayTextFill "#8F5902">
 <!ENTITY color_highwayTextHalo "#FDF9F3">
+<!ENTITY color_cyclewayTextFill "#314701">
+<!ENTITY color_cyclewayTextHalo "#FDF9F3">
