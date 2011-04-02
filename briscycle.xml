@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE Map [ <!ENTITY % entities SYSTEM "inc/entities.xml.inc"> %entities; ]>
-<Map bgcolor="#B0D3EB" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+<!DOCTYPE Map [
+<!ENTITY % entities SYSTEM "inc/entities.xml.inc">
+%entities;
+]>
+<!-- This stylesheet uses features only available in mapnik builds with
+     libxml2 as the XML parser. Furthermore, there are other features
+     and behaviour that necessitate an upgrade to mapnik 0.7.1 -->
+<Map bgcolor="#99B3CC" srs="&srs900913;" minimum_version="0.7.1">
+	&fontset-settings;
+	&layer-shapefiles;
+	&layer-leisure;
+	&layer-water;
+	&layer-water_features;
+	&layer-citywall;
+	&layer-buildings;
+	&layer-transport-pub;
+	&layer-transport-cycle-casing;
+	&layer-transport-road;
+	&layer-transport-road-bridge;
+	&layer-transport-cycle;
+	&layer-transport-pub-bridge;
+	&layer-roads-text;
 
-&styles;
-&layers;
-
+	&layer-amenity-stations;
+	&layer-placenames;
+	&layer-amenity-symbols;
 </Map>
