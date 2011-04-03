@@ -15,5 +15,6 @@
 <!ENTITY layer-transport-cycle SYSTEM "path/cycle.xml.inc">
 <!ENTITY layer-transport-cycle-bridge SYSTEM "path/cycle-bridge.xml.inc">
 <!ENTITY layer-leisure SYSTEM "nature/leisure.xml.inc">
+<!ENTITY layer-transport-foot SYSTEM "path/foot.xml.inc">
 
 <!ENTITY layer-roads-text SYSTEM "layer-roads-text.xml.inc">

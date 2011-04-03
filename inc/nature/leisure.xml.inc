@@ -1,5 +1,6 @@
 <Style name="leisure">
      <Rule>
+      &maxscale_zoom9;
       <Filter>[leisure] != ''</Filter>
      <PolygonSymbolizer>
         <CssParameter name="fill">&color_leisureFill;</CssParameter>
@@ -9,12 +10,14 @@
 
 <Style name="landuse">
 	<Rule>
+      &maxscale_zoom9;
 		<Filter>[landuse] != ''</Filter>
 		<PolygonSymbolizer>
 			<CssParameter name="fill">&color_leisureFill;</CssParameter>
 		</PolygonSymbolizer>
 	</Rule>
 	<Rule>
+      &maxscale_zoom9;
 		<Filter>[landuse] = 'forest'</Filter>
 		<PolygonPatternSymbolizer file="&symbols;/forest.png" />
     </Rule>

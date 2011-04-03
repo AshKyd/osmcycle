@@ -1021,6 +1021,7 @@
        and (cycleway is null or cycleway not in ('lane', 'track', 'opposite_lane', 'opposite_lane','opposite_track','left','right'))
        and ( access is null or access = 'permissive' )
        and ( service is null or service != 'parking_aisle' )
+       and tunnel is null
        order by z_order
       ) as roads
       </Parameter>

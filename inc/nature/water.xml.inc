@@ -74,23 +74,6 @@
       <PolygonPatternSymbolizer file="&symbols;/wetland.png" />
     </Rule>
 </Style>
-<Style name="glaciers-text">
-    <Rule> 
-      <Filter>[way_area] &gt;= 10000000</Filter>
-      &maxscale_zoom10;
-      <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="#99f" halo_radius="1" wrap_width="20"/>
-    </Rule>
-    <Rule>
-      <Filter>[way_area] &gt;= 5000000 and [way_area] &lt; 10000000</Filter>
-      &maxscale_zoom11;
-      <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="#99f" halo_radius="1" wrap_width="20"/>
-    </Rule>
-    <Rule>
-      <Filter>[way_area] &lt; 5000000</Filter>
-      &maxscale_zoom12;
-      <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="#99f" halo_radius="1" wrap_width="20"/>
-    </Rule>
-</Style>
 <Style name="water_lines">
     <Rule>
       <Filter>[waterway]='weir'</Filter>
@@ -212,7 +195,6 @@
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
-      <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="#6699cc" halo_radius="2" placement="line"/>
     </Rule>
     <Rule>
       <ElseFilter/> <!--[waterway]='stream'</Filter>-->
@@ -298,7 +280,6 @@
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">3</CssParameter>
       </LineSymbolizer>
-      <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="#6699cc" halo_radius="2" placement="line"/>
     </Rule>
     <Rule>
       <Filter>[waterway]='canal' and not ([tunnel] = 'yes' or [disused]='yes')</Filter>
@@ -310,7 +291,6 @@
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
-      <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="#6699cc" halo_radius="2" placement="line"/>
     </Rule>
     <Rule>
       <Filter>[waterway]='canal' and [tunnel] = 'yes'</Filter>
@@ -325,7 +305,6 @@
         <CssParameter name="stroke">white</CssParameter>
         <CssParameter name="stroke-width">7</CssParameter>
       </LineSymbolizer>
-      <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="#6699cc" halo_radius="2" placement="line"/>
     </Rule>
     <Rule>
       <Filter>[waterway]='canal' and not ([tunnel] = 'yes' or [disused]='yes' or [lock]='yes')</Filter>
@@ -337,7 +316,6 @@
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
-      <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="#6699cc" halo_radius="2" placement="line"/>
     </Rule>
     <Rule>
       <Filter>[waterway]='canal' and not ([tunnel] = 'yes' or [disused]='yes') and [lock]='yes'</Filter>
@@ -349,7 +327,6 @@
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
-      <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="#6699cc" halo_radius="2" wrap_width="20"/>
     </Rule>
     <Rule>
       <Filter>[waterway]='derelict_canal' or ([waterway]='canal' and [disused]='yes')</Filter>
@@ -376,7 +353,6 @@
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
-      <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="#80d1ae" halo_radius="1" spacing="600" placement="line"/>
     </Rule>
     <Rule>
       <Filter>[waterway]='derelict_canal' or ([waterway]='canal' and [disused]='yes')</Filter>
@@ -390,7 +366,6 @@
         <CssParameter name="stroke-linejoin">round</CssParameter>
         <CssParameter name="stroke-linecap">round</CssParameter>
       </LineSymbolizer>
-      <TextSymbolizer name="name" fontset_name="book-fonts" size="10" fill="#80d1ae" halo_radius="1" spacing="600" placement="line"/>
     </Rule>
     <Rule>
       <Filter>[waterway]='stream' and [tunnel]='yes'</Filter>
@@ -408,7 +383,7 @@
     </Rule>
     <Rule>
       <Filter>[waterway]='stream' and not [tunnel]='yes'</Filter>
-      &maxscale_zoom15;
+      &maxscale_zoom17;
       &minscale_zoom18;
       <LineSymbolizer>
         <CssParameter name="stroke">&color_water;</CssParameter>
@@ -432,7 +407,7 @@
     </Rule>
     <Rule>
       <Filter>([waterway]='drain' or [waterway]='ditch') and not [tunnel]='yes'</Filter>
-      &maxscale_zoom15;
+      &maxscale_zoom17;
       &minscale_zoom18;
       <LineSymbolizer>
         <CssParameter name="stroke">&color_water;</CssParameter>

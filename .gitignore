@@ -1,0 +1,7 @@
+inc/datasource-settings.xml.inc
+*.py
+*.pl
+*.png
+*.txt
+*.sh
+world_boundaries

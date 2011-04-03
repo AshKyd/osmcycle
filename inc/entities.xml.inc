@@ -64,6 +64,9 @@
 <!ENTITY color_track "#679503">
 <!ENTITY color_trackCasing "#EDD5B9">
 
+<!ENTITY color_footway "#8F5902">
+<!ENTITY color_footwayCasing "#EDD5B9">
+
 <!ENTITY color_buildingFill "#F6EDE0">
 <!ENTITY color_leisureFill "#C7D2B3">
 <!ENTITY color_highwayTextFill "#8F5902">

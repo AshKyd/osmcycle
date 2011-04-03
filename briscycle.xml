@@ -16,6 +16,7 @@
 	&layer-buildings;
 	&layer-transport-pub;
 	&layer-transport-cycle-casing;
+	&layer-transport-foot;
 	&layer-transport-road;
 	&layer-transport-road-bridge;
 	&layer-transport-cycle;
