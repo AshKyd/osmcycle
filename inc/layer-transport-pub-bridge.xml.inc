@@ -50,7 +50,7 @@
     <StyleName>transport-pub-bridge</StyleName>
     <Datasource>
       <Parameter name="table">
-      (select way,RAILWAY from &prefix;_line where railway is not null and bridge in ('yes','true','1')) as roads
+      (select way,RAILWAY from &prefix;_line where railway is not null and bridge in ('yes','true','1') and service is null) as roads
       </Parameter>
       &datasource-settings;
     </Datasource>

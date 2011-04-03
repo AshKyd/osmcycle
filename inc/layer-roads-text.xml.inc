@@ -62,9 +62,9 @@
       <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="&color_cyclewayTextFill;" halo_fill="&color_cyclewayTextHalo;" halo_radius="2" spacing="500" placement="line" />
     </Rule>
     <Rule>
-      &maxscale_zoom15;
-      <Filter>[highway] = 'path' or [highway] = 'cycleway'</Filter>
-      <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="&color_cyclewayTextFill;" halo_fill="&color_cyclewayTextHalo;" halo_radius="2" spacing="500" placement="line" />
+      &maxscale_zoom14;
+      <Filter>[highway] = 'path' or [highway] = 'cycleway' or [highway] = 'track'</Filter>
+      <TextSymbolizer name="name" fontset_name="book-fonts" size="8" fill="&color_cyclewayTextFill;" halo_fill="&color_cyclewayTextHalo;" halo_radius="2" spacing="500" placement="line" max_char_angle_delta="30" />
     </Rule>
 </Style>
 
@@ -106,6 +106,7 @@ where
 cycleway is not null and cycleway in ('lane', 'track', 'opposite_lane', 'opposite_lane','opposite_track','left','right')
 )
 OR (highway = 'path' and bicycle = 'yes')
+OR (highway = 'track' and bicycle = 'yes')
 OR (lcn = 'yes')
 OR (rcn = 'yes')
 )

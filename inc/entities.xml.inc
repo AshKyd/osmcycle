@@ -61,6 +61,8 @@
 <!ENTITY color_cycle_lane "#B5D17D">
 <!ENTITY color_cycleway "#9DD236">
 <!ENTITY color_cyclewayCasing "#679503">
+<!ENTITY color_track "#679503">
+<!ENTITY color_trackCasing "#EDD5B9">
 
 <!ENTITY color_buildingFill "#F6EDE0">
 <!ENTITY color_leisureFill "#C7D2B3">
