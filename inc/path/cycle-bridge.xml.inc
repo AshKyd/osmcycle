@@ -36,8 +36,7 @@
       <Parameter name="table">
       (select way,highway
        from &prefix;_line
-       where (highway = 'cycleway' OR highway = 'path')
-       and bridge in ('yes','true','1')
+       where (highway = 'cycleway' or (highway = 'path' and bicycle in ('yes','designated'))) and bridge in ('yes','true','1')
        order by z_order
       ) as roads
       </Parameter>
@@ -51,7 +50,7 @@
 		<Parameter name="table">
       (select way,highway
        from &prefix;_line
-       where (highway = 'cycleway' or (highway = 'path' and bicycle='yes')) and bridge in ('yes','true','1')
+       where (highway = 'cycleway' or (highway = 'path' and bicycle in ('yes','designated'))) and bridge in ('yes','true','1')
        order by z_order
       ) as roads
 		</Parameter>

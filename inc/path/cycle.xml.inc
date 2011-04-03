@@ -135,8 +135,8 @@
       (select way,highway
        from &prefix;_line
        where highway = 'cycleway'
-       OR ( highway = 'path' and bicycle is not null and bicycle = 'yes')
-       OR ( highway = 'track' and bicycle is not null and bicycle = 'yes')
+       OR ( highway = 'path' and bicycle is not null and bicycle in ('yes','designated'))
+       OR ( highway = 'track' and bicycle is not null and bicycle in ('yes','designated'))
        order by z_order
       ) as roads
 		</Parameter>
