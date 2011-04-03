@@ -1,18 +1,23 @@
 <Style name="points">
     <Rule>
       &maxscale_zoom15;
-      <Filter>[amenity]='bicycle_rental'</Filter>
+      <Filter>[amenity]='bicycle_rental' and [network] &lt;&gt; 'Brisbane CityCycle'</Filter>
       <PointSymbolizer file="&symbols;/rental_bicycle.p.20.png" />
     </Rule>
     <Rule>
       &maxscale_zoom15;
+      <Filter>[amenity]='bicycle_rental' and [network]='Brisbane CityCycle'</Filter>
+      <PointSymbolizer file="&symbols;/citycycle.png" />
+    </Rule>
+    <Rule>
+      &maxscale_zoom15;
       <Filter>[amenity]='bicycle_parking'</Filter>
-      <PointSymbolizer file="&symbols;/bicycle.parking.png" allow_overlap="false"/>
+      <PointSymbolizer file="&symbols;/bicycle-parking.png" allow_overlap="false"/>
     </Rule>
     <Rule>
       &maxscale_zoom16;
       <Filter>[amenity]='toilets'</Filter>
-      <PointSymbolizer file="&symbols;/toilets.p.20.png" />
+      <PointSymbolizer file="&symbols;/toilets.png" />
     </Rule>
     <Rule>
       &maxscale_zoom16; 
@@ -68,7 +73,7 @@
     <StyleName>points</StyleName>
     <Datasource>
       <Parameter name="table">
-      (select way,amenity,shop,tourism,highway,man_made,access,religion,waterway,lock,historic,leisure
+      (select way,amenity,shop,tourism,highway,man_made,access,religion,waterway,lock,historic,leisure,operator,network
       from &prefix;_point
       where amenity is not null
          or shop is not null

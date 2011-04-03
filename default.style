@@ -41,6 +41,7 @@ node,way   bicycle      text         nocache
 node,way   bridge       text         linear
 node,way   boundary     text         linear
 node,way   building     text         polygon
+node	   capacity     text         linear
 node	   capital      text         linear
 node,way   construction text         linear
 way        cycleway     text         linear
@@ -63,6 +64,7 @@ node,way   military     text         polygon
 node,way   motorcar     text         linear
 node,way   name         text         linear
 node,way   natural      text         polygon  # natural=coastline tags are discarded by a hard coded rule in osm2pgsql
+node	   network      text         linear
 node,way   oneway       text         linear
 node,way   operator     text         linear
 node       poi          text

@@ -19,7 +19,7 @@
     <Rule>
       &maxscale_zoom15;
       <Filter>[railway]='station' and not [disused]='yes'</Filter>
-      <PointSymbolizer file="&symbols;/train_station.png" />
+      <PointSymbolizer file="&symbols;/train-station.png" />
     </Rule>
     <Rule>
       &maxscale_zoom13;
@@ -61,13 +61,16 @@
     <Datasource>
       <Parameter name="table">
       (select way,name,railway,aerialway,disused
-      from &prefix;_point
-      where (
-		  railway in ('station','halt','tram_stop','subway_entrance')
-		  or aerialway='station'
-      )
-      and 
-      station != 'proposed'
+		  from &prefix;_point
+		  where (
+			  railway in ('station','halt','tram_stop','subway_entrance')
+			  or aerialway='station'
+		  )
+		  and 
+		  (
+			station is null
+			or station != 'proposed'
+		  )
       ) as stations
       </Parameter>
       &datasource-settings;
