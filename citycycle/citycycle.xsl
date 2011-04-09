@@ -9,7 +9,7 @@
 		<description>A list of Brisbane CityCycle stations as appears on http://www.citycycle.com.au/All-Stations/Station-Map. Last updated: <xsl:value-of select="$current-date"/>.</description>
 		<Style id="cc">
 			<IconStyle>
-				<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href></Icon>
+				<Icon><href>http://briscycle.com/themes/briscycle/images/icons/citycycle.png</href></Icon>
 			</IconStyle>
 		</Style>
 		<Folder>
