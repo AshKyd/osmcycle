@@ -1,4 +1,8 @@
 <?php
+/**
+ * Convert CityCycle XML to standardised KML.
+ * Outputs to stdout.
+ */
 define('CITYCYCLE_XML','http://www.citycycle.com.au/service/carto');
 
 // Load the XML source
