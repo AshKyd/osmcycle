@@ -21,8 +21,9 @@ $cc = new SimpleXmlElement($cc);
 
 $out = Array(
 	'type' => 'FeatureCollection',
-	'features' => $out
+	'features' => Array()
 );
+
 foreach($cc->markers->marker as $marker){
 	$attr = $marker->attributes();
 	$out['features'][] = Array(
@@ -30,11 +31,11 @@ foreach($cc->markers->marker as $marker){
 		'type' => 'Feature',
 		'geometry' => Array(
 			'type' => 'Point',
-			'coordinates' => Array((string)$attr->lat, (string)$attr->lng),
-			'properties' => Array(
-				'name' => ucname($attr->name),
-				'address' => ucname($attr->address)
-			)
+			'coordinates' => Array((float)$attr->lng, (float)$attr->lat)
+		),
+		'properties' => Array(
+			'description' => ucname($attr->address),
+			'category' => 'citycycle'
 		)
 	);
 }
